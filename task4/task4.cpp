@@ -23,10 +23,10 @@ int main(char argv[])
     fs.open(argv);
     if(!fs)
     {
-        cerr << "\nÎøèáêà ïðè îòêðûòèè ôàéëà" << endl;
+        cerr << "\nÐžÑˆÐ¸Ð±ÐºÐ° Ð¿Ñ€Ð¸ Ð¾Ñ‚ÐºÑ€Ñ‹Ñ‚Ð¸Ð¸ Ñ„Ð°Ð¹Ð»Ð° " << endl;
         exit(1);
     }
-    //Îòêðûòü ôàéë è ñ÷èòàòü ïîñòðî÷íî
+    //ÐžÑ‚ÐºÑ€Ñ‹Ñ‚ÑŒ Ñ„Ð°Ð¹Ð» Ð¸ ÑÑ‡Ð¸Ñ‚Ð°Ñ‚ÑŒ Ð¿Ð¾ÑÑ‚Ñ€Ð¾Ñ‡Ð½Ð¾
     while(fs.peek() != EOF)
     {
         fs >> tb >> te;
@@ -79,7 +79,7 @@ int main(char argv[])
             strcpy(q->tb, x->tb); q->hb = x->hb; q->mb = x->mb;
             q1 = q;
         }
-        //if(x.tb == p.te) { p = p->next; i--; }  //Ñîçäàòü èíòåðâàë
+        //if(x.tb == p.te) { p = p->next; i--; }  //Ð¡Ð¾Ð·Ð´Ð°Ñ‚ÑŒ Ð¸Ð½Ñ‚ÐµÑ€Ð²Ð°Ð»
         if((p->he < x->hb) || ((p->he == x->hb) && (p->me < x->mb))) { p = p->next; i--; }
         if((p->he > x->he) || ((p->he == x->he) && (p->me >= x->me)))
         {
