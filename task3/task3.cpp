@@ -21,7 +21,7 @@ int main(char argv[])
        fs[i].open(fn);
        if(!fs[i])
        {
-           cerr << "\nÎøèáêà ïğè îòêğûòèè ôàéëà " << "Cash" << (i + 1) << ".txt" << endl;
+           cerr << "\nĞÑˆĞ¸Ğ±ĞºĞ° Ğ¿Ñ€Ğ¸ Ğ¾Ñ‚ĞºÑ€Ñ‹Ñ‚Ğ¸Ğ¸ Ñ„Ğ°Ğ¹Ğ»Ğ° " << "Cash" << (i + 1) << ".txt" << endl;
            exit(1);
        }                
     }
