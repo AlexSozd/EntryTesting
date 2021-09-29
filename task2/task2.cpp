@@ -14,7 +14,7 @@ int main(char argv1[], char argv2[])
     fs1.open(argv1);
     if(!fs1)
     {
-        cerr << "\nÎøèáêà ïðè îòêðûòèè ôàéëà" << argv1 << endl;
+        cerr << "\nÐžÑˆÐ¸Ð±ÐºÐ° Ð¿Ñ€Ð¸ Ð¾Ñ‚ÐºÑ€Ñ‹Ñ‚Ð¸Ð¸ Ñ„Ð°Ð¹Ð»Ð° " << argv1 << endl;
         exit(1);
     }
     i = 0;
@@ -27,7 +27,7 @@ int main(char argv1[], char argv2[])
     fs2.open(argv2);
     if(!fs2)
     {
-        cerr << "\nÎøèáêà ïðè îòêðûòèè ôàéëà" << argv2 << endl;
+        cerr << "\nÐžÑˆÐ¸Ð±ÐºÐ° Ð¿Ñ€Ð¸ Ð¾Ñ‚ÐºÑ€Ñ‹Ñ‚Ð¸Ð¸ Ñ„Ð°Ð¹Ð»Ð° " << argv2 << endl;
         exit(1);
     }
     while(fs2.peek() != EOF)
